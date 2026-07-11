@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="KnockPlan helps field sales professionals plan routes, organize prospects, capture visit outcomes, and manage follow-up.">
+  <title>KnockPlan | Smarter Door-Knocking Routes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="shell nav-inner">
+    <a class="brand" href="index.html">
+      <span class="logo" aria-hidden="true"></span>
+      <span>KnockPlan</span>
+    </a>
+    <div class="nav-links">
+      <a href="privacy/">Privacy</a>
+      <a href="terms/">Terms</a>
+      <a href="support/">Support</a>
+      <a href="delete-account/">Delete Account</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <section class="hero shell">
+    <div class="badge">Built for field sales</div>
+    <h1>Plan the route. Knock the doors. Remember every follow-up.</h1>
+    <p class="lead">KnockPlan helps field sales professionals organize prospects, plan efficient route days, record visit outcomes, and stay focused on the next best opportunity.</p>
+    <div class="actions">
+      <a class="button primary" href="support/">Get Support</a>
+      <a class="button" href="privacy/">Read Privacy Policy</a>
+    </div>
+  </section>
+
+  <section class="section shell">
+    <div class="section-head">
+      <div class="eyebrow">What KnockPlan does</div>
+      <h2>A simpler way to work the field</h2>
+      <p class="lead" style="margin:0;text-align:left">Keep your routes, prospect details, notes, and follow-ups organized in one place.</p>
+    </div>
+    <div class="grid">
+      <div class="card"><h3>Daily route planning</h3><p>Build and review a clear plan for your day before you start driving.</p></div>
+      <div class="card"><h3>Prospect organization</h3><p>Keep important business details and visit history easy to find.</p></div>
+      <div class="card"><h3>Visit check-ins</h3><p>Capture outcomes, notes, and next steps while the conversation is still fresh.</p></div>
+      <div class="card"><h3>Follow-up reminders</h3><p>Know which businesses need another visit and when to return.</p></div>
+      <div class="card"><h3>Location-aware tools</h3><p>Use device location, when permitted, to support nearby-account and routing features.</p></div>
+      <div class="card"><h3>Voice and written notes</h3><p>Record useful context in the format that works best in the moment.</p></div>
+    </div>
+  </section>
+
+  <section class="section shell">
+    <div class="card" style="text-align:center;padding:40px">
+      <div class="eyebrow">Need help?</div>
+      <h2>We made support simple.</h2>
+      <p class="lead">Visit the support page for help, account questions, or technical issues.</p>
+      <a class="button primary" href="support/">Open Support</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="shell footer-inner">
+    <div>© 2026 KnockPlan. Built for focused field work.</div>
+    <div class="footer-links">
+      <a href="privacy/">Privacy</a>
+      <a href="terms/">Terms</a>
+      <a href="support/">Support</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
+
+# KnockPlan Website
+
+Official public pages for the KnockPlan mobile application.
+
+## Pages
+
+- Home
+- Privacy Policy
+- Terms of Service
+- Support
+- Delete Account
+
+Published using GitHub Pages.
+
+
+:root {
+  --bg: #07111f;
+  --bg-soft: #0d1a2b;
+  --card: rgba(255,255,255,0.06);
+  --card-border: rgba(255,255,255,0.12);
+  --text: #f7f9fc;
+  --muted: #a9b5c6;
+  --blue: #2f80ff;
+  --blue-2: #6eb6ff;
+  --danger: #ff6b6b;
+  --max: 1080px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background:
+    radial-gradient(circle at 15% 10%, rgba(47,128,255,.22), transparent 32%),
+    radial-gradient(circle at 90% 0%, rgba(110,182,255,.13), transparent 28%),
+    var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+}
+
+a { color: var(--blue-2); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.shell { width: min(calc(100% - 32px), var(--max)); margin: 0 auto; }
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  backdrop-filter: blur(16px);
+  background: rgba(7,17,31,.78);
+  border-bottom: 1px solid var(--card-border);
+}
+
+.nav-inner {
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text);
+  font-weight: 800;
+  letter-spacing: -.02em;
+  font-size: 1.1rem;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #f8fbff, #dbeaff);
+  position: relative;
+  box-shadow: inset 0 0 0 2px rgba(47,128,255,.35), 0 10px 30px rgba(0,0,0,.2);
+}
+
+.logo:before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 22px;
+  background: var(--blue);
+  border-radius: 999px;
+  left: 16px;
+  top: 10px;
+}
+
+.logo:after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-left: 7px solid var(--blue);
+  border-top: 7px solid var(--blue);
+  transform: rotate(45deg);
+  left: 9px;
+  top: 8px;
+  border-radius: 2px;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  font-size: .95rem;
+}
+
+.nav-links a { color: var(--muted); }
+.nav-links a:hover { color: var(--text); text-decoration: none; }
+
+.hero {
+  padding: 92px 0 72px;
+  text-align: center;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: rgba(47,128,255,.12);
+  border: 1px solid rgba(110,182,255,.25);
+  color: #cde5ff;
+  font-size: .88rem;
+  font-weight: 700;
+}
+
+h1, h2, h3 { line-height: 1.15; letter-spacing: -.035em; }
+
+h1 {
+  font-size: clamp(2.8rem, 8vw, 5.7rem);
+  max-width: 900px;
+  margin: 24px auto 18px;
+}
+
+h2 {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  margin: 0 0 18px;
+}
+
+h3 { font-size: 1.18rem; margin-top: 0; }
+
+.lead {
+  color: var(--muted);
+  font-size: clamp(1.05rem, 2.2vw, 1.28rem);
+  max-width: 760px;
+  margin: 0 auto 30px;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 20px;
+  border-radius: 12px;
+  font-weight: 800;
+  border: 1px solid var(--card-border);
+  color: var(--text);
+  background: var(--card);
+}
+
+.button.primary {
+  background: linear-gradient(135deg, var(--blue), #145fd1);
+  border-color: transparent;
+  box-shadow: 0 12px 32px rgba(47,128,255,.28);
+}
+
+.button:hover { text-decoration: none; transform: translateY(-1px); }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.card {
+  padding: 24px;
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: 18px;
+}
+
+.card p { color: var(--muted); margin-bottom: 0; }
+
+.section { padding: 72px 0; }
+
+.section-head {
+  max-width: 700px;
+  margin-bottom: 30px;
+}
+
+.eyebrow {
+  color: var(--blue-2);
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  font-size: .78rem;
+}
+
+.page {
+  padding: 70px 0 90px;
+}
+
+.page article {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 36px;
+  border-radius: 20px;
+  background: rgba(255,255,255,.045);
+  border: 1px solid var(--card-border);
+}
+
+.page article h1 {
+  font-size: clamp(2.3rem, 6vw, 4rem);
+  text-align: left;
+  margin-top: 0;
+}
+
+.page article h2 {
+  font-size: 1.55rem;
+  margin-top: 38px;
+}
+
+.page article p,
+.page article li { color: #d3dbe7; }
+
+.notice {
+  padding: 16px 18px;
+  border-left: 4px solid var(--blue);
+  background: rgba(47,128,255,.09);
+  border-radius: 10px;
+}
+
+.danger {
+  border-left-color: var(--danger);
+  background: rgba(255,107,107,.08);
+}
+
+footer {
+  padding: 30px 0 44px;
+  color: var(--muted);
+  border-top: 1px solid var(--card-border);
+  font-size: .92rem;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.footer-links { display: flex; gap: 16px; flex-wrap: wrap; }
+
+@media (max-width: 760px) {
+  .nav-inner { align-items: flex-start; padding: 16px 0; flex-direction: column; }
+  .grid { grid-template-columns: 1fr; }
+  .hero { padding-top: 68px; }
+  .page article { padding: 24px; }
+}
